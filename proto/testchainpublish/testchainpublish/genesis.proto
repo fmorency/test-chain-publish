@@ -1,0 +1,12 @@
+syntax = "proto3";
+package testchainpublish.testchainpublish;
+
+import "gogoproto/gogo.proto";
+import "testchainpublish/testchainpublish/params.proto";
+
+option go_package = "test-chain-publish/x/testchainpublish/types";
+
+// GenesisState defines the testchainpublish module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

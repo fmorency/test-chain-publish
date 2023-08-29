@@ -1,0 +1,7 @@
+syntax = "proto3";
+package testchainpublish.testchainpublish;
+
+option go_package = "test-chain-publish/x/testchainpublish/types";
+
+// Msg defines the Msg service.
+service Msg {}
